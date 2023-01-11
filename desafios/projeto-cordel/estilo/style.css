@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root{
+    --fonte-titulo: 'Permanent Marker', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+header, footer{
+    background-color: black;
+    color: white;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+}
