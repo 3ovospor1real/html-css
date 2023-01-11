@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de divs</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #content{
+            /* CONFIGURAÇÕES BÁSICAS*/ 
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            
+            position: absolute;
+            /* Posiciona o conteudo no centro do container, partindo da extremidade superior esquerda*/
+            left: 50%;
+            top: 50%;
+
+            /* Move o conteúdo metade para a esquerda e metade para a direira, fazendo assim que o conteudo fique perfeitamente alinhado ao meio*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="content">
+
+        </article>
+    </section>
+</body>
+</html>
