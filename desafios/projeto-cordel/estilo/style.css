@@ -1,33 +1,84 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 :root{
     --fonte-titulo: 'Permanent Marker', cursive;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-versos: 'Sriracha', cursive;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif
 
 }
 
-body{
+*{
     margin: 0px;
-    font-family: var(--fonte-padrao);
+    padding: 0px;
 }
 
-header, footer{
+html, body{
+    min-height: 100vh;
+    font-family: var(--fonte-padrao);
+    background-color: rgb(77, 77, 77);
+}
+
+header{
     background-color: black;
     color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-header a, footer a {
+header > h1{
+    font-family: var(--fonte-titulo);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw;
+}
+ 
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-header{
-    padding: 10px;
-    text-align: center;
+a:hover{
+    text-decoration: underline;
 }
 
-h1{
-    font-family: var(--fonte-titulo);
-    font-size: 3em;
+section{
+    padding: 10vh 0px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-versos);
+    font-size: 3.5vw;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section.imagem {
+    background-color: rgb(57, 57, 57);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 30px;
+}
+
+p.espaco {
+    margin-bottom: 10vw;
+}
+
+footer {
+    color: white;
+    background-color: rgb(32, 32, 32);
+    padding: 5px;
+    text-align: center;
 }
