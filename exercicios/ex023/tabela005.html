@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: rgb(189, 189, 189);
+            font-size: 1.1em;
+            padding: 5px;
+            font-weight: bold;
+        }
+        th, td {
+            padding: 8px;
+            border: solid 1px black;
+        }
+        .yellow{
+            background-color: rgb(255, 245, 167);
+        }
+        .blue{
+            background-color: rgb(158, 158, 252);
+        }
+        .green{
+            background-color: rgb(117, 179, 117);
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando colunas</h1>
+    <table>
+        <colgroup>
+            <col class="yellow">
+            <col span="2" class="blue">
+            <col class="green">
+        </colgroup>
+        <caption>Profissões</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Profissão</th>
+                <th>Idade</th>
+                <th>Nacionalidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>Programador</td>
+                <td>14 anos</td>
+                <td>Brasileiro</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Professor</td>
+                <td>32 anos</td>
+                <td>Português</td>
+            </tr>
+            <tr>
+                <td>Claúdia</td>
+                <td>Cozinheira</td>
+                <td>40 anos</td>
+                <td>Argentina</td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+</body>
+</html>
